@@ -190,10 +190,11 @@
 			if($(".webcam-box").length){
 				$(".webcam-box").remove();
 			}
-			$('<div class="webcam-box"><div id="webcam"></div><p style="text-align:center"><input type="button" value="拍照" class="btn"></p></div>').appendTo($("body"));
+			$('<div class="webcam-box" style="display:none;"><div id="webcam" style="width:600px;height:400px;"></div><p style="text-align:center"></p></div>').appendTo($("body"));
 
 			var w = $("#webcam").width() || 320, h = $("#webcam").height() || 240;
-
+			console.log($("#webcam").width() ， $("#webcam").height());
+			
 			var html = cfg.get_html(w, h);
 
 			$("#webcam").append(html);
