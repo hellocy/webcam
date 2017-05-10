@@ -201,16 +201,16 @@
 
 			$(this).click(function(){
 				layer.open({
-		            type: 1,
-		            title: "在线拍照上传",
-		            area: [w, h], //宽高
-		            shadeClose: true, //开启遮罩关闭
-		            content: $("#webcam"),
-		            btn: ['拍照'],
-		            yes: function(index, layero){
+				    type: 1,
+				    title: "在线拍照上传",
+				    area: [w, h], //宽高
+				    shadeClose: true, //开启遮罩关闭
+				    content: $("#webcam"),
+				    btn: ['拍照'],
+				    yes: function(index, layero){
 					   cfg.snap();
 					}
-		        });
+				});
 			});
 			
 			cfg.set_hook('onComplete', function(msg){
