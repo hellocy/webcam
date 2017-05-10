@@ -5,24 +5,25 @@
 <title>在线拍照功能</title>
 
 <style type="text/css">
-	#box{width:330px; height:240px; margin:20px 50px}
 	.camera{
-		border: 5px solid #555;
+		border: 0;
 		border-radius:3px;
+		padding: 10px 50px;
+		background:#3887d0;
+		color:#fff;
+		cursor:pointer;
 	}
-	.btn{height:35px;padding:10px 25px; border:0; background: #bbddff; margin-top:10px;cursor:pointer}
-	#results{margin-top:50px}
 </style>
 </head>
 
 <body>
-	<button class="camera">相机</button>
+	<button class="camera">开启相机</button>
    	<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="layer/layer.js"></script>
 	<script type="text/javascript" src="jquery.webcam.js"></script>
    	<script language="JavaScript">
    		$(".camera").photo({
-    		api_url: 'http://csm.hqygou.com/order/order/uploadfile', // URL to upload script
+    			api_url: 'http://csm.hqygou.com/order/order/uploadfile', // URL to upload script
 			swf_url: 'webcam.swf', // URI to webcam.swf movie (defaults to cwd)
 			shutter_url: 'shutter.mp3', // URI to shutter.mp3 sound
 			quality: 90, // JPEG quality (1 - 100)
